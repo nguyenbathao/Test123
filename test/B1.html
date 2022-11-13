@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+        
+        <h1>Tính tổng các số nguyên tố trong khoảng a và b</h1>
+        <p>a: <input type="text" name="" id="a">  </p>
+        <p>b: <input type="text" name="" id="b">  </p>
+        <input type="button" value="Tính" onclick="alert(sum())">
+
+
+    <script type="text/javascript">
+     
+
+        function sum() {
+            let a = document.getElementById("a").value;
+            let b = document.getElementById("b").value;
+            let i = [];
+            let array = 0;
+
+            let flag = false;
+
+            for (let count = parseInt(a, 10); count <= b; count++) {
+
+                i.push(count)
+            }
+
+
+            for (let dem = 0; dem < i.length; dem++) {
+                for (let dem1 = 2; dem1 < i[dem]; dem1++) {
+                    if (i[dem] > 2) {
+                        if (i[dem] % dem1 == 0) {
+                            flag = false;
+                            break;
+                        } else {
+                            flag = true;
+                        }
+                    } else {
+                        flag = false;
+                    }
+
+                }
+                if (flag == true) {
+                    array = array + i[dem];
+                }
+            }
+            return(array);
+
+        }
+
+
+    </script>
+</body>
+
+</html>

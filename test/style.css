@@ -1,0 +1,57 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #e9e9e9;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #2196F3;
+    color: white;
+    border-radius: 10%;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 5px;
+    width: 200px;
+    padding: 20px;
+}
+
+.row{
+    width: 81px;
+    height: 20px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    /* identical to box height */
+
+
+    color: #516FD5;
+    border: 1px solid #BFC8E6;
+    border-radius: 10px;
+    margin: 3px;
+}
